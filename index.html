@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Welcome to Jenny's site!</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/waving-hand_1f44b.png">
+  </head>
+  <body>
+    <header>
+      <h1>Hey there</h1>
+      <audio controls>
+        <source src="hello.mp3" type="audio/mpeg">
+      </audio>
+    </header>
+    <aside>
+      <p>Feel free to bookmark this to keep an eye on my project updates</p>
+    </aside>
+    <nav>
+      <a href="http://jennyxin.com/UserPage/"><span style="color:darkblue">My User Page</span></a>
+    </nav>
+    <hr>
+    <main>
+      <section>
+        <figure>
+          <img src="https://media-exp1.licdn.com/dms/image/C5603AQHaR_tkoqXUcg/profile-displayphoto-shrink_400_400/0/1559705651809?e=1615420800&v=beta&t=ufFphqGe0NCvQr6HfAdKSbNBbYHZblubD-Wlc6BZZ14" alt="Headshot">
+          <figcaption>This is what I look like</figcaption>
+        </figure>
+      </section>
+      <section>
+        <div>
+          <h2>About Me</h2>
+          <ul>
+            <li>Based in <b>San Francisco, CA</b></li>
+            <li>Third year <i>Math-CS</i> major at UC San Diego</li>
+            <li>Interested in <strong>software development</strong></li>
+          </ul>
+          <h3>Programming Languages</h3>
+          <ol>
+            <li>Java</li>
+            <li>Javascript</li>
+            <pre>
+              React
+              Node.js
+              Express.js
+            </pre>
+            <li>Python</li>
+          </ol>
+          <h3>Favorite Quote</h3>
+          <em>People say nothing is impossible but I do nothing everyday.</em>
+          <h3>Favorite Command</h3>
+          <code>git rm -rf</code>
+          <h3>Classes</h3>
+          <table>
+            <tr>
+              <th>Course Name</th>
+              <th>Course Listing</th>
+            </tr>
+            <tr>
+              <td>Software Engineering</td>
+              <td>CSE 110</td>
+            </tr>
+            <tr>
+              <td>Applicable Math and Computing</td>
+              <td>Math 152</td>
+            </tr>
+            <tr>
+              <td>Intro Numerical Analys/Linear</td>
+              <td>Math 170A</td>
+            </tr>
+            <tr>
+              <td>Gospel Choir</td>
+              <td>Mus 95G</td>
+            </tr>
+          </table>
+          <h3>Random Selfies</h3>
+          <picture>
+            <source media="(min-width:650px)" srcset="https://www.georgiaaquarium.org/wp-content/uploads/2018/10/beluga-whale-research-5-750x500.jpg">
+            <img src="https://64.media.tumblr.com/063cefa89c32cfd604e533db289ff6d1/tumblr_p2n30pWvk51w8f1tco1_1280.png" alt="Selfie" style="height:315px;">
+          </picture>
+          <video width="560" height="315" controls>
+            <source src="https://ak.picdn.net/shutterstock/videos/23231332/preview/stock-footage-white-dolphin-swimming-in-an-aquarium-filmed-in-the-valencian-community-spain-in-january.mp4" type="video/mp4">
+          </video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PbySbprDjF0?start=516" frameborder="0"></iframe>
+        </div>
+      </section>
+      <section>
+        <h2>Let me know what you think</h2>
+        <form>
+          <fieldset>
+            <legend>Personal data</legend>
+            <label>Name:</label>
+            <input type="text"><br>
+            <input type="checkbox">
+            <label>Male</label>
+            <input type="checkbox">
+            <label>Female</label><br>
+            <label>Address:</label>
+            <textarea rows="5" cols="30"></textarea><br>
+            <label for="college">College:</label>
+            <input list="colleges">
+            <datalist id="colleges">
+              <option value="Sixth">
+              <option value="Muir">
+              <option value="Marshall">
+              <option value="Warren">
+              <option value="ERC">
+              <option value="Revelle">
+            </datalist>
+            <label>Favorite color:</label>
+            <input type="color"><br>
+            <label>Birthday:</label>
+            <input type="date"><br>
+            <label>Eemail:</label>
+            <input type="email"><br>
+            <label>Birth certificate:</label>
+            <input type="file"><br>
+            <label>Social Security Number:</label>
+            <input type="number"><br>
+            <label>Bank Passcode:</label>
+            <input type="password"><br>
+          </fieldset>
+          <fieldset>
+            <legend>Answer</legend>
+            <select>
+              <optgroup label="Right answers">
+                <option value="love">I love it!</option>
+                <option value="like">I like it.</option>
+              </optgroup>
+              <optgroup label="Wrong answers">
+                <option value="hate">I hate it!</option>
+                <option value="dislike">I hate it.</option>
+              </optgroup>
+            </select>
+          </fieldset> 
+          <input type="submit">
+          <input type="reset">
+        </form>
+      </section>
+    </main>
+    <hr>
+    <footer>
+      <canvas id="myCanvas"></canvas>
+      <svg height="150" width="500">
+      <ellipse cx="75" cy="50" rx="50" ry="25" />
+      <text fill="orange" font-size="15" x="60" y="55">Jenny</text>
+    </footer>
+  </body>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "red";
+    ctx.fillRect(20, 20, 75, 50);
+    ctx.fillStyle = "green"; 
+    ctx.fillRect(95, 20, 75, 50); 
+    ctx.fillStyle = "blue"; 
+    ctx.fillRect(170, 20, 75, 50);
+  </script>
+</html>
