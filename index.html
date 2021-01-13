@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Welcome to Jenny's site!</title>
     <meta charset="UTF-8">
@@ -19,12 +20,10 @@
     </nav>
     <hr>
     <main>
-      <section>
-        <figure>
-          <img src="https://media-exp1.licdn.com/dms/image/C5603AQHaR_tkoqXUcg/profile-displayphoto-shrink_400_400/0/1559705651809?e=1615420800&v=beta&t=ufFphqGe0NCvQr6HfAdKSbNBbYHZblubD-Wlc6BZZ14" alt="Headshot">
-          <figcaption>This is what I look like</figcaption>
-        </figure>
-      </section>
+      <figure>
+        <img src="https://media-exp1.licdn.com/dms/image/C5603AQHaR_tkoqXUcg/profile-displayphoto-shrink_400_400/0/1559705651809?e=1615420800&v=beta&t=ufFphqGe0NCvQr6HfAdKSbNBbYHZblubD-Wlc6BZZ14" alt="Headshot">
+        <figcaption>This is what I look like</figcaption>
+      </figure>
       <section>
         <div>
           <h2>About Me</h2>
@@ -36,14 +35,10 @@
           <h3>Programming Languages</h3>
           <ol>
             <li>Java</li>
-            <li>Javascript</li>
-            <pre>
-              React
-              Node.js
-              Express.js
-            </pre>
+            <li>Javascript*</li>
             <li>Python</li>
           </ol>
+          <pre>   * React, Node.js, Express.js</pre>
           <h3>Favorite Quote</h3>
           <em>People say nothing is impossible but I do nothing everyday.</em>
           <h3>Favorite Command</h3>
@@ -83,7 +78,7 @@
           <video width="560" height="315" controls>
             <source src="https://ak.picdn.net/shutterstock/videos/23231332/preview/stock-footage-white-dolphin-swimming-in-an-aquarium-filmed-in-the-valencian-community-spain-in-january.mp4" type="video/mp4">
           </video>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/PbySbprDjF0?start=516" frameborder="0"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PbySbprDjF0?start=516"></iframe>
         </div>
       </section>
       <section>
@@ -99,7 +94,7 @@
             <label>Female</label><br>
             <label>Address:</label>
             <textarea rows="5" cols="30"></textarea><br>
-            <label for="college">College:</label>
+            <label>College:</label>
             <input list="colleges">
             <datalist id="colleges">
               <option value="Sixth">
@@ -152,24 +147,25 @@
     <footer>
       <canvas id="canvas"></canvas>
       <svg height="150" width="500">
-      <ellipse cx="75" cy="50" rx="50" ry="25" />
-      <text fill="orange" font-size="15" x="60" y="55">Jenny</text>
+        <ellipse cx="75" cy="50" rx="50" ry="25" />
+        <text fill="orange" font-size="15" x="60" y="55">Jenny</text>
+      </svg>
     </footer>
+    <script>
+      var c = document.getElementById("canvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(20, 20, 75, 50);
+      ctx.fillStyle = "green"; 
+      ctx.fillRect(95, 20, 75, 50); 
+      ctx.fillStyle = "blue"; 
+      ctx.fillRect(170, 20, 75, 50);
+  
+      function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
+    </script>
   </body>
-  <script>
-    var c = document.getElementById("canvas");
-    var ctx = c.getContext("2d");
-    ctx.fillStyle = "red";
-    ctx.fillRect(20, 20, 75, 50);
-    ctx.fillStyle = "green"; 
-    ctx.fillRect(95, 20, 75, 50); 
-    ctx.fillStyle = "blue"; 
-    ctx.fillRect(170, 20, 75, 50);
-
-    function showContent() {
-      var temp = document.getElementsByTagName("template")[0];
-      var clon = temp.content.cloneNode(true);
-      document.body.appendChild(clon);
-    }
-  </script>
 </html>
