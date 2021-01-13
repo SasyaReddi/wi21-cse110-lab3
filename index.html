@@ -48,8 +48,12 @@
           <em>People say nothing is impossible but I do nothing everyday.</em>
           <h3>Favorite Command</h3>
           <code>git rm -rf</code>
-          <h3>Classes</h3>
           <table>
+            <caption>Class Schedule</caption>
+            <colgroup>
+              <col span="1" style="background-color:red">
+              <col style="background-color:green">
+            </colgroup>
             <tr>
               <th>Course Name</th>
               <th>Course Listing</th>
@@ -86,7 +90,7 @@
         <h2>Let me know what you think</h2>
         <form>
           <fieldset>
-            <legend>Personal data</legend>
+            <legend>Personal information</legend>
             <label>Name:</label>
             <input type="text"><br>
             <input type="checkbox">
@@ -109,7 +113,7 @@
             <input type="color"><br>
             <label>Birthday:</label>
             <input type="date"><br>
-            <label>Eemail:</label>
+            <label>Email:</label>
             <input type="email"><br>
             <label>Birth certificate:</label>
             <input type="file"><br>
@@ -117,6 +121,10 @@
             <input type="number"><br>
             <label>Bank Passcode:</label>
             <input type="password"><br>
+            <details>
+              <summary>Privacy</summary>
+              <p>Your data will be sold.</p>
+            </details>
           </fieldset>
           <fieldset>
             <legend>Answer</legend>
@@ -136,16 +144,20 @@
         </form>
       </section>
     </main>
+    <button onclick="showContent()">Show hidden content</button>
+    <template>
+      <h2>nvm</h2>
+    </template>
     <hr>
     <footer>
-      <canvas id="myCanvas"></canvas>
+      <canvas id="canvas"></canvas>
       <svg height="150" width="500">
       <ellipse cx="75" cy="50" rx="50" ry="25" />
       <text fill="orange" font-size="15" x="60" y="55">Jenny</text>
     </footer>
   </body>
   <script>
-    var c = document.getElementById("myCanvas");
+    var c = document.getElementById("canvas");
     var ctx = c.getContext("2d");
     ctx.fillStyle = "red";
     ctx.fillRect(20, 20, 75, 50);
@@ -153,5 +165,11 @@
     ctx.fillRect(95, 20, 75, 50); 
     ctx.fillStyle = "blue"; 
     ctx.fillRect(170, 20, 75, 50);
+
+    function showContent() {
+      var temp = document.getElementsByTagName("template")[0];
+      var clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
   </script>
 </html>
