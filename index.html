@@ -81,52 +81,74 @@
             </tr>
           </table>
           <h3>Random Selfies</h3>
-          <picture>
-            <source media="(min-width:650px)" srcset="https://www.georgiaaquarium.org/wp-content/uploads/2018/10/beluga-whale-research-5-750x500.jpg">
-            <img src="https://64.media.tumblr.com/063cefa89c32cfd604e533db289ff6d1/tumblr_p2n30pWvk51w8f1tco1_1280.png" alt="Selfie" style="height:315px;">
-          </picture>
-          <video width="560" height="315" controls>
-            <source src="https://ak.picdn.net/shutterstock/videos/23231332/preview/stock-footage-white-dolphin-swimming-in-an-aquarium-filmed-in-the-valencian-community-spain-in-january.mp4" type="video/mp4">
-          </video>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/PbySbprDjF0?start=516"></iframe>
+          <div class="flex-container">
+            <picture>
+              <source media="(min-width:650px)" srcset="https://www.georgiaaquarium.org/wp-content/uploads/2018/10/beluga-whale-research-5-750x500.jpg">
+              <img src="https://64.media.tumblr.com/063cefa89c32cfd604e533db289ff6d1/tumblr_p2n30pWvk51w8f1tco1_1280.png" alt="Selfie" style="height:315px;">
+            </picture>
+            <video width="560" height="315" controls>
+              <source src="https://ak.picdn.net/shutterstock/videos/23231332/preview/stock-footage-white-dolphin-swimming-in-an-aquarium-filmed-in-the-valencian-community-spain-in-january.mp4" type="video/mp4">
+            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PbySbprDjF0?start=516"></iframe>
+          </div>
         </div>
       </section>
       <section>
         <h2 class="section-header">Let me know what you think</h2>
         <form>
-          <fieldset>
+          <fieldset class="grid-container">
             <legend>Personal information</legend>
-            <label>Name:</label>
-            <input type="text"><br>
-            <input type="checkbox">
-            <label>Male</label>
-            <input type="checkbox">
-            <label>Female</label><br>
-            <label>Address:</label>
-            <textarea rows="5" cols="30"></textarea><br>
-            <label>College:</label>
-            <input list="colleges">
-            <datalist id="colleges">
-              <option value="Sixth">
-              <option value="Muir">
-              <option value="Marshall">
-              <option value="Warren">
-              <option value="ERC">
-              <option value="Revelle">
-            </datalist>
-            <label>Favorite color:</label>
-            <input type="color"><br>
-            <label>Birthday:</label>
-            <input type="date"><br>
-            <label>Email:</label>
-            <input type="email"><br>
-            <label>Birth certificate:</label>
-            <input type="file"><br>
-            <label>Social Security Number:</label>
-            <input type="number"><br>
-            <label>Bank Passcode:</label>
-            <input type="password"><br>
-            <details>
+            <div class="row">
+              <label>Name:</label>
+              <input type="text">
+            </div>
+            <div class="row">
+              <input type="checkbox">
+              <label>Male</label>
+              <input type="checkbox">
+              <label>Female</label>
+            </div>
+            <div class="row">
+              <label>Address:</label>
+              <textarea rows="5" cols="30"></textarea>
+            </div>
+            <div style="justify-self: end;">
+              <label>College:</label>
+              <input list="colleges">
+              <datalist id="colleges">
+                <option value="Sixth">
+                <option value="Muir">
+                <option value="Marshall">
+                <option value="Warren">
+                <option value="ERC">
+                <option value="Revelle">
+              </datalist>
+            </div>
+            <div style="justify-self: start;">
+              <label>Favorite color:</label>
+              <input type="color">
+            </div>
+            <div style="justify-self: end;">
+              <label>Birthday:</label>
+              <input type="date">
+            </div>
+            <div style="justify-self: start;">
+              <label>Email:</label>
+              <input type="email">
+            </div>
+            <div style="justify-self: end;">
+              <label>Birth certificate:</label>
+              <input type="file">
+            </div>
+            <div style="justify-self: start;">
+              <label>Social Security Number:</label>
+              <input type="number">
+            </div>
+            <div class="row">
+              <label>Bank Passcode:</label>
+              <input type="password">
+            </div>
+            <details class="row">
               <summary>Privacy</summary>
               <p>Your data will be sold.</p>
             </details>
@@ -144,7 +166,7 @@
               </optgroup>
             </select>
           </fieldset> 
-          <input type="submit">
+          <input class="submit-btn" type="submit">
           <input type="reset">
         </form>
       </section>
