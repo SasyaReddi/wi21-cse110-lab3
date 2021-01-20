@@ -6,3 +6,15 @@
   border-style: solid;
   border-color: hsl(39, 100%, 50%);  
 }
+
+h1 {
+  text-decoration: underline
+}
+
+a:hover {
+  text-decoration: none
+}
+
+a:active {
+  background-color: red
+}
