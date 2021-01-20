@@ -1,0 +1,8 @@
+.section-header {
+  color: #45ad96
+}
+
+#class-table {
+  border-style: solid;
+  border-color: hsl(39, 100%, 50%);  
+}
