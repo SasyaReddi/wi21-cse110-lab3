@@ -4,6 +4,12 @@
     <title>Welcome to Jenny's site!</title>
     <meta charset="UTF-8">
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/waving-hand_1f44b.png">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      * {
+        color: rgb(35, 14, 95)
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -26,7 +32,7 @@
       </figure>
       <section>
         <div>
-          <h2>About Me</h2>
+          <h2 class="section-header">About Me</h2>
           <ul>
             <li>Based in <b>San Francisco, CA</b></li>
             <li>Third year <i>Math-CS</i> major at UC San Diego</li>
@@ -43,7 +49,7 @@
           <em>People say nothing is impossible but I do nothing everyday.</em>
           <h3>Favorite Command</h3>
           <code>git rm -rf</code>
-          <table>
+          <table id="class-table">
             <caption>Class Schedule</caption>
             <colgroup>
               <col span="1" style="background-color:red">
@@ -82,7 +88,7 @@
         </div>
       </section>
       <section>
-        <h2>Let me know what you think</h2>
+        <h2 class="section-header">Let me know what you think</h2>
         <form>
           <fieldset>
             <legend>Personal information</legend>
